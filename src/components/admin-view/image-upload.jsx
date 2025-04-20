@@ -50,7 +50,7 @@ function ProductImageUpload({
     const data = new FormData();
     data.append("my_file", imageFile);
     const response = await axios.post(
-      "http://localhost:8080/api/admin/products/upload-image", data
+      "https://ecom-backend-h97f.onrender.com/api/admin/products/upload-image", data
     );
     console.log(response, "response");
 
